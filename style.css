@@ -1,0 +1,380 @@
+/*monspace*/
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+/* font-family: "Space Mono", monospace; */
+/* roman */
+@import url('https://fonts.googleapis.com/css2?family=Gideon+Roman&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+/* font-family: "Gideon Roman", serif; */
+@import url('https://fonts.googleapis.com/css2?family=Khand:wght@300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    padding: 2px 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: black;
+}
+.navBar .logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navBar .logo img{
+    width: 80px;
+    border-radius: 50%;
+    left: 10px;
+}
+.navBar .logo p{
+    color: white;
+}
+.navBar .Menu{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-left: 200px;
+}
+.navBar .Menu li a {
+    color: white;
+    padding-right: 30px;
+    padding-left: 20px;
+    right: 7px;
+    font-size: 18px;
+}
+.navBar .Menu li a i{
+    font-size: 20px;
+}
+.navBar .Menu li :hover{
+    background:rgb(255, 123, 0);
+    cursor: pointer;
+    padding: 10px;
+    transition: 0.2s all linear;
+    border-radius: 17px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.home {
+    padding-top: 240px;
+    width: 100%;
+    min-height: 100vh;
+    background: url(images/crop-plate-with-salad.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit , minmax(17rem,auto));
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 50px;
+    /* filter: brightness(60%);
+    filter: blur(90%); */
+}
+.home .content{
+    padding-bottom: 250px;
+}
+.home .content h1{
+    color: white;
+    font-size: 52px;
+    padding-left: 50px;
+    font-weight: 600;
+}
+.home .content p{
+    color: white;
+    font-size: 18px;
+    padding-left: 50px;
+    padding-top: 5px;
+    letter-spacing: 0.1rem;
+    
+}
+.home .content input{
+    background: rgb(255, 123, 0);
+    color: white;
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 25px;
+    border: 2px solid rgb(255, 123, 0);
+    font-size: 17px;
+    margin-top: 45px;
+    margin-left: 45px;
+}
+.about{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.about .content {
+    padding-left: 45px;
+}
+.about .image img{
+    height: 600px;
+    width: 500px;
+    margin-left: 20px;
+    box-shadow: 6px 6px 18px rgba(40, 40, 40, 0.412);
+}
+.about .content h2{
+    font-size: 32px;
+    padding-bottom: 15px;
+    
+}
+.about .btn input{
+    background: rgb(255, 123, 0);
+    color: white;
+    padding-left: 45px;
+    padding-right: 45px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    border-radius: 25px;
+    margin-right: 10px;
+    border: 2px solid rgb(255, 123, 0);
+    font-size: 17px;
+    margin-top: 35px;
+    margin-bottom: 35px; 
+}
+.about .para p{
+    letter-spacing: 0.8px;
+    font-size: 15px;
+    color: black;
+    font-weight: 500;
+   overflow-y: auto;
+   font-family: "Khand", sans-serif;
+   padding-bottom: 5px;
+   line-height: 1.5rem;
+}
+.menu{
+    background: black;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 30px;
+}
+.menu .container {
+    display: grid;
+    /* grid-template-columns: repeat(4, 1fr); Divide the space into four equal parts */
+   grid-template-columns: repeat(auto-fit, minmax(17rem, auto));
+    align-items: center;
+    gap: 1.5rem;
+   
+    
+}
+.menu h2{
+    font-size: 32px;
+    color: white;
+    font-family: "Gideon Roman", serif;
+    font-weight: 500;
+    padding-top: 45px;
+    padding-bottom: 75px;
+    padding-left: 620px;
+}
+.menu .container .box{
+    border: 0.5px solid rgba(255, 255, 255, 0.315);
+    padding-bottom: 20px;
+}
+.menu .container .box .content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu .container .box h3{
+    color: white;
+    font-weight: 300;
+    padding-left: 120px;
+    padding-bottom: 14px;
+    font-size: 21px;
+}
+.menu .container .box input{
+    background: rgb(255, 123, 0);
+    color: white;
+    font-family: "Gideon Roman", serif;
+    border: 1px solid rgb(255,123,0);
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 18px;
+    margin-bottom: 3px;
+    margin-right: 50px;
+    border-radius: 25px;
+}
+.menu .container .box span{
+    color: white;
+    font-size: 18px;
+    margin-left: 25px;
+}
+.menu .container .box img{
+    width: 300px;
+    height: 250px;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 28px;
+}
+.feedback{
+    background: white;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+.feedback h2{
+    font-size: 32px;
+    color: black;
+    font-family: "Gideon Roman", serif;
+    font-weight: 600;
+    padding-top: 45px;
+    padding-bottom: 45px;
+    padding-left: 560px;
+}
+.feedback .container .box{
+    border: 1px solid rgba(33, 33, 33, 0.653);
+    padding-bottom: 20px;
+    margin-right: 30px;
+    margin-left: 30px;
+}
+.feedback .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+.feedback .container .box input{
+    background: rgb(255, 123, 0);
+    color: white;
+    font-family: "Gideon Roman", serif;
+    border: 1px solid rgb(255,123,0);
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 14px;
+    margin-bottom: 3px;
+    margin-right: 45px;
+    margin-top: 15px;
+    margin-left: 65px;
+    border-radius: 25px;
+}
+.feedback .container .box p{
+    color: black;
+    font-size: 14px;
+    font-family: "Gideon Roman", serif;
+    line-height: 1.2rem;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.feedback .container .box img{
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+.login {
+    background: url(images/loginBackDrop.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.login{
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.login h2{
+    font-size: 32px;
+    font-family: "Gideon Roman", serif;
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    padding-left: 650px;
+}
+.login #user {
+    display: block;
+    background: transparent;
+    padding-left: 25px;
+    padding-right: 135px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 35px;
+    color: rgba(253, 252, 251, 0.416);
+    border: 0.5px solid rgba(255, 255, 255, 0.364);
+    outline: 0;
+    border-radius: 15px;
+    margin-left:  250px;
+}
+.login .box{
+    display: inline;
+    padding-left: 25px;
+    padding-right: 35px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 35px;
+    color: rgba(253, 252, 251, 0.416);
+    border: 0.5px solid rgba(255, 255, 255, 0.364);
+    outline: 0;
+    border-radius: 15px;
+    margin-left:  250px;
+    background: transparent;
+}
+.login #submit{
+    background: rgb(255, 123, 0);
+    color: white;
+    font-family: "Gideon Roman", serif;
+    border: 1px solid rgb(255,123,0);
+    padding-left: 45px;
+    padding-right: 45px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    font-size: 20px;
+    margin-bottom: 3px;
+    margin-right: 45px;
+    margin-top: 15px;
+    margin-left: 265px;
+    border-radius: 25px;
+}
+.map .container .box{
+    display: block;
+    padding-left: 40px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+.map {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(17rem, auto));
+    align-items: center;
+}
+.map .container .box h4{
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+.map .container .box p{
+    font-size: 17px;
+}
+.map .container .box p i{
+    padding-bottom: 10px;
+}
+.map .image img{
+    width: 500px;
+    height: 300px;
+    margin-top: 40px;
+    margin-left: 150px;
+    margin-bottom: 40px;
+}
+#sms h2{
+    padding-left: 450px;
+}
